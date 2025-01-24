@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>口袋AI - 将世界知识装进口袋</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* 淡蓝色背景 */
+        }
+
+        /* 导航栏样式 */
+        nav {
+            background-color: #007bff; /* 蓝色导航栏 */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Hero区域样式 */
+        .hero {
+            background-color: #007bff; /* 蓝色背景 */
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+        }
+
+        .hero button {
+            background-color: white;
+            color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        /* 特性展示区域样式 */
+        .features {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+        }
+
+        .feature-card {
+            text-align: center;
+            margin: 0 20px;
+            width: 200px; /* 设置卡片宽度 */
+        }
+
+        .feature-card span {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            font-size: 1em;
+            white-space: nowrap; /* 防止文字换行 */
+            overflow: hidden; /* 隐藏超出部分 */
+            text-overflow: ellipsis; /* 超出部分显示省略号 */
+        }
+
+        /* 开发者介绍和社区信息区域样式 */
+        .developer-community {
+            background-color: #f0f0f0; /* 灰色背景 */
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .developer-community h2 {
+            font-size: 1.5em; /* 减小标题文字大小 */
+            margin-bottom: 10px; /* 减小标题与内容的间距 */
+        }
+
+        .developer-community p {
+            font-size: 1em; /* 减小段落文字大小 */
+            margin-bottom: 10px; /* 减小段落之间的间距 */
+        }
+
+        .developer-community a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .developer-community a:hover {
+            text-decoration: underline;
+        }
+
+        /* 版本信息展示区域样式 */
+        .version-info {
+            background-color: #333; /* 深灰色背景 */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .version-info p {
+            font-size: 1em;
+            margin: 0;
+        }
+
+        /* 下载引导区域（CTA）样式 */
+        .download-cta {
+            background-color: #007bff; /* 蓝色背景 */
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .download-cta h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .download-cta p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .download-cta button {
+            background-color: white;
+            color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        /* 页脚区域样式 */
+        .footer {
+            background-color: #f0f0f0; /* 浅灰色背景 */
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 1em;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">功能</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero区域 -->
+    <div class="hero">
+        <h1>口袋AI</h1>
+        <p>将世界知识装进口袋</p>
+        <button>了解更多</button>
+    </div>
+
+    <!-- 特性展示区域 -->
+    <div class="features">
+        <div class="feature-card">
+            <span>💬</span>
+            <h3>基于中文模型优化的中文对话体验</h3>
+            <p>为您提供更流畅、自然的中文对话体验。</p>
+        </div>
+        <div class="feature-card">
+            <span>📱</span>
+            <h3>针对中文用户优化的交互界面</h3>
+            <p>简洁易用的界面设计，符合中文用户的使用习惯。</p>
+        </div>
+        <div class="feature-card">
+            <span>🔄</span>
+            <h3>智能网络错误处理与重试机制</h3>
+            <p>确保在网络不稳定时仍能正常使用。</p>
+        </div>
+        <div class="feature-card">
+            <span>🎯</span>
+            <h3>更适合中国用户的功能定制</h3>
+            <p>根据中国用户的需求和习惯，提供个性化的功能定制。</p>
+        </div>
+    </div>
+
+    <!-- 开发者介绍和社区信息区域 -->
+    <div class="developer-community">
+        <h2>开发者介绍</h2>
+        <p>开发者：云中江树</p>
+        <p>LangGPT 提示词社区链接：<a href="https://langgpt.cn/" target="_blank">https://langgpt.cn/</a></p>
+        <p>联系方式：</p>
+        <p>微信：[微信号]</p>
+        <p>GitHub：<a href="https://github.com/[GitHub用户名]" target="_blank">https://github.com/[GitHub用户名]</a></p>
+        <p>邮箱：[邮箱地址]</p>
+    </div>
+
+    <!-- 版本信息展示区域 -->
+    <div class="version-info">
+        <p>版本号：1.0.0</p>
+    </div>
+
+    <!-- 下载引导区域（CTA） -->
+    <div class="download-cta">
+        <h2>立即下载口袋AI</h2>
+        <p>体验最先进的人工智能技术</p>
+        <button>下载</button>
+    </div>
+
+    <!-- 页脚区域 -->
+    <div class="footer">
+        <p>&copy; 2024 口袋AI. 保留所有权利。</p>
+</body>
+</html>
